@@ -1,0 +1,275 @@
+[
+  {
+    "image_url": "/stock-6.jpg",
+    "post_date": "2023-01-16T10:00:00Z",
+    "description": "Introductie tot het verbeteren van de communicatie op de werkplek. Begrijp het belang van effectieve communicatie en hoe dit de werkplek positief kan beïnvloeden.",
+    "type": "info",
+    "campaign_id": "cfef04f4-ff6e-43c9-954c-78f9016372be"
+  },
+  {
+    "image_url": "/stock-2.jpg",
+    "post_date": "2023-01-23T10:00:00Z",
+    "description": "Wat zijn enkele hindernissen die u ondervindt bij effectieve communicatie op uw werkplek?",
+    "type": "question",
+    "campaign_id": "cfef04f4-ff6e-43c9-954c-78f9016372be"
+  },
+  {
+    "image_url": "/stock-3.jpg",
+    "post_date": "2023-08-18T10:00:00Z",
+    "description": "Leren over de rol van luistervaardigheden bij het verbeteren van de communicatie op de werkplek. Ontdek technieken om actief en empathisch te luisteren.",
+    "type": "learn",
+    "campaign_id": "cfef04f4-ff6e-43c9-954c-78f9016372be"
+  },
+  {
+    "image_url": "/stock-4.jpg",
+    "post_date": "2023-08-25T10:00:00Z",
+    "description": "Hoe zou u uw huidige luistervaardigheden beoordelen? Wat zijn enkele stappen die u kunt nemen om uw luistervaardigheden te verbeteren?",
+    "type": "question",
+    "campaign_id": "cfef04f4-ff6e-43c9-954c-78f9016372be"
+  },
+  {
+    "image_url": "/stock-5.jpg",
+    "post_date": "2023-09-01T10:00:00Z",
+    "description": "Inzicht in het belang van duidelijke en beknopte communicatie. Leer hoe u uw ideeën effectief kunt overbrengen en vermijd miscommunicatie.",
+    "type": "learn",
+    "campaign_id": "cfef04f4-ff6e-43c9-954c-78f9016372be"
+  },
+  {
+    "image_url": "/stock-3.jpg",
+    "post_date": "2023-02-21T10:00:00Z",
+    "description": "Introductie tot het verbeteren van de samenwerking in teams. Begrijp waarom effectieve samenwerking essentieel is voor het succes van een team.",
+    "type": "info",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },
+  {
+    "image_url": "/stock-7.jpg",
+    "post_date": "2023-02-28T10:00:00Z",
+    "description": "Wat zijn enkele uitdagingen die u tegenkomt bij het samenwerken met uw team?",
+    "type": "question",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },
+  {
+    "image_url": "/stock-1.png",
+    "post_date": "2023-09-22T10:00:00Z",
+    "description": "Ontdek de voordelen van een omgeving van vertrouwen binnen een team. Leer hoe open dialoog en transparantie kunnen bijdragen aan het opbouwen van vertrouwen.",
+    "type": "learn",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },
+  {
+    "image_url": "/stock-5.jpg",
+    "post_date": "2023-09-29T10:00:00Z",
+    "description": "Hoe zou u de huidige vertrouwensniveaus binnen uw team beoordelen? Wat kunnen we doen om het vertrouwen binnen teams te vergroten?",
+    "type": "question",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },
+  {
+    "image_url": "/stock-8.jpg",
+    "post_date": "2023-10-06T10:00:00Z",
+    "description": "Begrijp het belang van creatief probleemoplossen binnen teams. Ontdek hoe een open en ondersteunende omgeving innovatie en creativiteit kan bevorderen.",
+    "type": "learn",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },
+  {
+    "image_url": "/stock-10.jpg",
+    "post_date": "2023-10-13T10:00:00Z",
+    "description": "Heeft uw team voldoende ruimte om creatieve oplossingen te bedenken voor problemen? Hoe kunnen we een meer ondersteunende omgeving creëren voor creatief denken?",
+    "type": "question",
+    "campaign_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218"
+  },  {
+    "image_url": "/stock-6.jpg",
+    "post_date": "2023-01-26T14:00:00Z",
+    "description": "Introductie tot het promoten van ethiek op de werkplek. Leer waarom ethiek een cruciale rol speelt in het vormgeven van een positieve bedrijfscultuur.",
+    "type": "info",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },
+  {
+    "image_url": "/stock-4.jpg",
+    "post_date": "2023-02-02T14:00:00Z",
+    "description": "Wat zijn enkele ethische uitdagingen die u op uw werkplek tegenkomt? Hoe heeft u deze aangepakt?",
+    "type": "question",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },
+  {
+    "image_url": "/stock-2.jpg",
+    "post_date": "2023-10-11T14:00:00Z",
+    "description": "Leer hoe ethisch leiderschap bijdraagt aan het bevorderen van een ethische werkomgeving. Begrijp de rol die leiders spelen bij het beïnvloeden van ethisch gedrag.",
+    "type": "learn",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },
+  {
+    "image_url": "/stock-9.jpg",
+    "post_date": "2023-10-18T14:00:00Z",
+    "description": "Hoe zou u het niveau van ethisch leiderschap binnen uw organisatie beoordelen? Wat zijn enkele stappen die leiders kunnen nemen om ethiek te bevorderen?",
+    "type": "question",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },
+  {
+    "image_url": "/stock-7.jpg",
+    "post_date": "2023-10-25T14:00:00Z",
+    "description": "Inzicht in het belang van ethische gedragscodes. Leer hoe gedragscodes kunnen helpen om ethische normen op de werkplek te verduidelijken en te handhaven.",
+    "type": "learn",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },
+  {
+    "image_url": "/stock-10.jpg",
+    "post_date": "2023-11-01T14:00:00Z",
+    "description": "Hoe effectief is uw huidige ethische gedragscode? Wat zijn enkele verbeteringen die kunnen worden aangebracht om deze effectiever te maken?",
+    "type": "question",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },  {
+    "image_url": "/stock-5.jpg",
+    "post_date": "2023-02-15T12:30:00Z",
+    "description": "Introductie tot diversiteit en inclusie op de werkplek. Leer waarom het omarmen van diversiteit en inclusie belangrijk is voor organisaties.",
+    "type": "info",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-6.jpg",
+    "post_date": "2023-02-22T12:30:00Z",
+    "description": "Wat zijn volgens u de voordelen van een diverse en inclusieve werkplek?",
+    "type": "question",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-1.png",
+    "post_date": "2023-10-02T12:30:00Z",
+    "description": "Begrijp het belang van bewustwording van vooroordelen. Leer hoe onbewuste vooroordelen diversiteit en inclusie op de werkplek kunnen beïnvloeden.",
+    "type": "learn",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-4.jpg",
+    "post_date": "2023-10-09T12:30:00Z",
+    "description": "Hebt u voorbeelden van hoe onbewuste vooroordelen de werkplek kunnen beïnvloeden? Wat kunnen we doen om bewustwording van vooroordelen te vergroten?",
+    "type": "question",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-8.jpg",
+    "post_date": "2023-10-16T12:30:00Z",
+    "description": "Leer over het belang van een inclusieve cultuur. Ontdek hoe een inclusieve cultuur kan bijdragen aan het welzijn en de productiviteit van medewerkers.",
+    "type": "learn",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-3.jpg",
+    "post_date": "2023-10-23T12:30:00Z",
+    "description": "Hoe zou u de cultuur van uw organisatie beoordelen op het gebied van diversiteit en inclusie? Wat zijn enkele stappen die we kunnen nemen om een meer inclusieve cultuur te bevorderen?",
+    "type": "question",
+    "campaign_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a"
+  },
+  {
+    "image_url": "/stock-7.jpg",
+    "post_date": "2023-03-15T09:00:00Z",
+    "description": "Introductie tot emotionele intelligentie. Leer wat emotionele intelligentie is en waarom het belangrijk is op de werkplek.",
+    "type": "info",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-2.jpg",
+    "post_date": "2023-03-22T09:00:00Z",
+    "description": "Hoe zou u uw huidige niveau van emotionele intelligentie beoordelen? Wat zijn enkele gebieden waarin u denkt dat u zou kunnen verbeteren?",
+    "type": "question",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-5.jpg",
+    "post_date": "2023-10-01T09:00:00Z",
+    "description": "Leer over het belang van zelfbewustzijn. Begrijp hoe het verhogen van uw zelfbewustzijn kan bijdragen aan het verbeteren van uw emotionele intelligentie.",
+    "type": "learn",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-10.jpg",
+    "post_date": "2023-10-08T09:00:00Z",
+    "description": "Wat zijn enkele technieken die u gebruikt om uw zelfbewustzijn te verhogen? Hoe hebben deze technieken u geholpen bij het verbeteren van uw emotionele intelligentie?",
+    "type": "question",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-3.jpg",
+    "post_date": "2023-10-15T09:00:00Z",
+    "description": "Ontdek het belang van empathie. Leer hoe het beoefenen van empathie kan helpen bij het verbeteren van uw emotionele intelligentie en het opbouwen van sterkere relaties op de werkplek.",
+    "type": "learn",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-1.png",
+    "post_date": "2023-10-22T09:00:00Z",
+    "description": "Kunt u een situatie delen waarin empathie een cruciale rol speelde op uw werkplek? Hoe heeft empathie de uitkomst van de situatie beïnvloed?",
+    "type": "question",
+    "campaign_id": "34f4b3a5-77c8-4462-85fe-b3931f4b3309"
+  },
+  {
+    "image_url": "/stock-1.png",
+    "post_date": "2023-10-29T09:00:00Z",
+    "description": "Zelfbeheersing en emotionele intelligentie. Deel een ervaring waarbij zelfbeheersing een cruciale rol speelde op de werkplek.",
+    "type": "question",
+    "campaign_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2"
+  },{
+    "image_url": "/stock-4.png",
+    "post_date": "2023-10-10T09:00:00Z",
+    "description": "Het creëren van een veilige ruimte. Hoe draag je bij aan het creëren van een veilige en respectvolle werkomgeving?",
+    "type": "question",
+    "campaign_id": "2c30f9ac-9d6f-4e10-bbe8-ee5805686a73"
+  },{
+    "image_url": "/stock-5.png",
+    "post_date": "2023-05-15T16:00:00Z",
+    "description": "Leer over het belang van verschillende perspectieven. Hoe verrijken verschillende achtergronden en ervaringen een team?",
+    "type": "question",
+    "campaign_id": "b4df5c2f-0468-4b2e-9f1d-6c92f9790f49"
+  },{
+    "image_url": "/stock-9.png",
+    "post_date": "2023-11-01T12:30:00Z",
+    "description": "Oefening in luistervaardigheden. Deel een ervaring waarbij actief luisteren een positief effect had op de communicatie.",
+    "type": "question",
+    "campaign_id": "11b5ad41-48b6-4c51-bccd-4d7c847bb59c"
+  },{
+    "image_url": "/stock-6.png",
+    "post_date": "2023-10-05T10:00:00Z",
+    "description": "Leren over stressmanagement. Ontdek technieken om stress te minimaliseren en een gezondere werkplek te bevorderen.",
+    "type": "learn",
+    "campaign_id": "dca15b0f-6d6f-44b5-bdaf-897c578a6f4a"
+  },{
+    "image_url": "/stock-10.png",
+    "post_date": "2023-09-15T10:00:00Z",
+    "description": "Herkennen van ongepast gedrag. Leer de tekenen van ongepast gedrag herkennen en hoe hiermee om te gaan.",
+    "type": "learn",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  },
+  {
+    "image_url": "/stock-7.png",
+    "post_date": "2023-09-22T10:00:00Z",
+    "description": "De kracht van melden. Hoe kan het melden van ongepast gedrag een veiligere werkomgeving bevorderen?",
+    "type": "question",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  },
+  {
+    "image_url": "/stock-5.png",
+    "post_date": "2023-09-29T10:00:00Z",
+    "description": "Empathie op de werkplek. Leer hoe empathie kan helpen bij het omgaan met en voorkomen van ongepast gedrag.",
+    "type": "learn",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  },
+  {
+    "image_url": "/stock-3.png",
+    "post_date": "2023-10-06T10:00:00Z",
+    "description": "Reflectie op empathie. Deel een ervaring waarbij empathie hielp om een conflict of moeilijke situatie op te lossen.",
+    "type": "question",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  },
+  {
+    "image_url": "/stock-2.png",
+    "post_date": "2023-10-13T10:00:00Z",
+    "description": "Het belang van respect. Leer hoe respect voor elkaar bijdraagt aan het voorkomen van ongepast gedrag.",
+    "type": "info",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  },
+  {
+    "image_url": "/stock-8.png",
+    "post_date": "2023-10-20T10:00:00Z",
+    "description": "Reflectie op respect. Deel een moment waarop respect voor elkaar een positieve impact had op de werkplek.",
+    "type": "question",
+    "campaign_id": "26db7087-f35e-4c3b-9788-7cb357e4906d"
+  }
+]

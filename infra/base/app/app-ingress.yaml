@@ -1,0 +1,58 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app-ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api/auth/
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-service-srv
+                port:
+                  number: 3006
+          - path: /api/notification/
+            pathType: Prefix
+            backend:
+              service:
+                name: notification-service-srv
+                port:
+                  number: 3005
+          - path: /api/chat/
+            pathType: Prefix
+            backend:
+              service:
+                name: chat-service-srv
+                port:
+                  number: 3004
+          - path: /api/campaigns/
+            pathType: Prefix
+            backend:
+              service:
+                name: campaign-service-srv
+                port:
+                  number: 3002
+          - path: /api/moderation/
+            pathType: Prefix
+            backend:
+              service:
+                name: moderation-service-srv
+                port:
+                  number: 3000
+          - path: /socket/
+            pathType: Prefix
+            backend:
+              service:
+                name: socket-service-srv
+                port:
+                  number: 3001
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: client-srv
+                port:
+                  number: 8002
+  ingressClassName: nginx

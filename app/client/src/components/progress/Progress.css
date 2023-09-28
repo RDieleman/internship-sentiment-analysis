@@ -1,0 +1,46 @@
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  margin: 15px;
+  border-radius: 5px;
+
+  & .progress-step {
+    background-color: var(--custom-grey-medium);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+  }
+
+  & .progress-step:not(.active) {
+    border-top: 1px solid var(--custom-grey-medium);
+  }
+
+  & .progress-step:first-child {
+    border-top: none;
+  }
+
+  & > .active {
+    background-color: var(--custom-pink);
+    color: white;
+    transform: scaleX(1.04) scaleY(1.2);
+    z-index: 1;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.react-aria-Tooltip {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,12 @@
+.tag-group {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.tag {
+  border: 1px solid var(--custom-grey-dark);
+  padding: 2px 10px;
+  border-radius: calc(var(--custom-border-radius) * 2);
+  font-size: smaller !important;
+}

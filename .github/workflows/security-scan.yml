@@ -1,0 +1,29 @@
+name: "security-scan"
+
+on:
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: ["main"]
+  push:
+    branches: ["main"]
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+
+    steps:
+      - name: Cached LFS checkout
+        uses: nschloe/action-cached-lfs-checkout@v1.1.2
+        with:
+          exclude: "sentiment-ai/** docs/**"
+
+      - name: Bearer Security
+        # You may pin to the exact commit or the version.
+        # uses: Bearer/bearer-action@6defb0965f52024b18258cb6091606b48e933e73
+        uses: Bearer/bearer-action@v2
+        with:
+          skip-rule: "javascript_express_default_cookie_config"

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentiment-ai-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sentiment-ai
+  template:
+    metadata:
+      labels:
+        app: sentiment-ai
+    spec:
+      containers:
+        - name: sentiment-ai
+          image: sentiment-ai
+          resources:
+            requests:
+              memory: "2Gi"
+            limits:
+              memory: "3Gi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sentiment-ai-srv
+spec:
+  selector:
+    app: sentiment-ai
+  ports:
+    - name: sentiment-ai
+      protocol: TCP
+      port: 8000
+      targetPort: 8000

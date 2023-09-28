@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: rdieleman.com
+spec:
+  secretName: ssl-rdieleman.com
+  issuerRef:
+    name: letsencrypt-dev-wcard
+    kind: Issuer
+    group: cert-manager.io
+  commonName: "*.sa-prototype.rdieleman.com"
+  dnsNames:
+    - "sa-prototype.rdieleman.com"
+    - "*.sa-prototype.rdieleman.com"

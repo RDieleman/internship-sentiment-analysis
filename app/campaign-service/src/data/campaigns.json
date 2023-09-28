@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "cfef04f4-ff6e-43c9-954c-78f9016372be",
+    "title": "Verbetering van Communicatie op de Werkplek",
+    "description": "Een uitgebreid initiatief gericht op het verbeteren van de algehele communicatie op de werkplek. Dit omvat het ontwikkelen van sterke luistervaardigheden, het duidelijk en beknopt uitdrukken van ideeën en het constructief omgaan met conflicten.",
+    "is_archived": false,
+    "start_date": "2023-08-15T08:00:00Z"
+  },
+  {
+    "_id": "8c0f01b8-d76b-4ae5-a2a7-05483c19b218",
+    "title": "Verbetering van Team Samenwerking",
+    "description": "Een inspanning om de synergie en effectiviteit van teams te verbeteren door verbeterde samenwerkingstechnieken. Dit omvat het bevorderen van een omgeving van vertrouwen, het bevorderen van open dialoog en het aanmoedigen van creatief probleemoplossen binnen teams.",
+    "is_archived": false,
+    "start_date": "2023-09-20T12:30:00Z"
+  },
+  {
+    "_id": "f1d020d6-f6fa-432d-a659-9cb0139e5fe6",
+    "title": "Het Aanpakken van Ongepast Gedrag",
+    "description": "Een noodzakelijke campagne gericht op het adresseren en corrigeren van gevallen van ongepast gedrag binnen de organisatie. Deze campagne benadrukt het belang van respect en begrip, zodat iedereen zich veilig en gewaardeerd voelt op het werk.",
+    "is_archived": true,
+    "start_date": "2022-12-01T16:00:00Z"
+  },
+  {
+    "_id": "97b96d19-fa4b-45cb-9201-3f5fa9530b3a",
+    "title": "Bevorderen van Diversiteit en Inclusie",
+    "description": "Een initiatief gericht op het bevorderen van een cultuur van diversiteit en inclusie binnen de organisatie. Deze campagne streeft naar begrip, acceptatie en respect voor individuele verschillen.",
+    "is_archived": false,
+    "start_date": "2023-10-10T09:00:00Z"
+  },
+  {
+    "_id": "4a7bd170-94f2-4f5c-8f37-e4d70df0b6b2",
+    "title": "Bevorderen van Werknemerswelzijn",
+    "description": "Een uitgebreide campagne gericht op het bevorderen van het algehele welzijn van werknemers. Dit omvat een focus op mentale gezondheid, balans tussen werk en privé en fysiek welzijn.",
+    "is_archived": false,
+    "start_date": "2023-08-25T14:00:00Z"
+  }
+]

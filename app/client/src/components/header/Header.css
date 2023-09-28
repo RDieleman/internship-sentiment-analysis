@@ -1,0 +1,104 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--custom-black);
+  padding: 10px 40px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  flex-shrink: 0;
+  z-index: 2;
+  color: white;
+}
+
+#header-content-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#header-content-end {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+#header-content-end > div {
+  position: relative;
+}
+
+#icon-custom {
+  height: 25px;
+  cursor: pointer;
+}
+
+.header-icon {
+  height: 40px;
+  color: white;
+}
+
+#icon-bell {
+  height: auto;
+  min-height: 27px;
+  position: relative;
+}
+
+.icon-indicator {
+  background-color: red;
+  opacity: 0.9;
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+#icon-help {
+  height: auto;
+  min-height: 30px;
+}
+#icon-menu {
+  height: auto;
+  min-height: 20px;
+  cursor: pointer;
+}
+
+.notification-body {
+  background-color: white;
+  cursor: pointer;
+  min-width: 200px;
+  text-align: left;
+  border-bottom: var(--custom-grey-dark) solid 1px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 0px;
+}
+
+.notification-body:last-child {
+  border-bottom: none;
+}
+.notification-title {
+  font-weight: bold;
+  color: black;
+  padding-left: 10px;
+}
+.notification-content {
+  color: black;
+  opacity: 0.8;
+  padding-left: 10px;
+}
+
+.notification-unseen {
+  border-left: var(--custom-pink) solid 5px;
+}

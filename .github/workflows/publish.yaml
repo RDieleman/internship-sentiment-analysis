@@ -1,0 +1,27 @@
+name: publish-package-messaging
+on:
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Cached LFS checkout
+        uses: nschloe/action-cached-lfs-checkout@v1.1.2
+        with:
+          include: "packages/messaging/**"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - run: npm install
+        working-directory: ./packages/messaging
+      - run: npm run build
+        working-directory: ./packages/messaging
+      - run: |
+          echo @rdieleman:registry=https://npm.pkg.github.com/ > .npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> .npmrc
+        working-directory: ./packages/messaging
+      - run: npm publish
+        working-directory: ./packages/messaging

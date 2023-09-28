@@ -1,0 +1,40 @@
+name: "Configure App"
+description: "Congigures Skaffold and the app"
+inputs:
+  auth_secret:
+    description: "Secret used by the ingress for access to cluster"
+    required: true
+  ssl_secret:
+    description: "Secret used to configure HTTPS"
+    required: true
+  container_registry:
+    description: "Container registry source"
+    required: true
+  jwt_option_token:
+    description: "JWT Token"
+    required: true
+  cookie_option_key:
+    description: "Secret key used for the session cookie"
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Create skaffold configuration file
+      shell: bash
+      run: |
+        echo SKAFFOLD_DEFAULT_REPO=${{ inputs.container_registry }} >> skaffold.env
+        echo SSL_SECRET_NAME=${{ inputs.ssl_secret }} >> skaffold.env
+        echo AUTH_SECRET_NAME=${{ inputs.auth_secret }} >> skaffold.env
+
+    - name: Create app configuration file
+      shell: bash
+      run: |
+        echo JWT_OPTION_TOKEN=${{ inputs.jwt_option_token }} >> config/base/app.env
+        echo COOKIE_OPTION_SECRET_KEY=${{ inputs.cookie_option_key }} >> config/base/app.env
+
+    - name: List contents for debugging
+      shell: bash
+      run: |
+        ls config/base
+        cat config/base/app.env

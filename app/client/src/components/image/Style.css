@@ -1,0 +1,31 @@
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+}
+
+.image-container > img {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-loading {
+  background: linear-gradient(270deg, #b3b3b3, #4d4d4d);
+  background-size: 200% 200%;
+  animation: moving-gradient 2s infinite;
+}
+
+@keyframes moving-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

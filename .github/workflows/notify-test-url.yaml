@@ -1,0 +1,27 @@
+name: notify-test-url
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set unique namespace
+        id: set_subdomain
+        run: |
+          PR_NUMBER=$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+          UNIQUE_NAMESPACE="pr-${PR_NUMBER}"
+          echo "UNIQUE_NAMESPACE=${UNIQUE_NAMESPACE}" >> $GITHUB_ENV
+          echo "::set-output name=namespace::${UNIQUE_NAMESPACE}"
+
+      - name: Post URL to pull request
+        uses: JoseThen/comment-pr@v1.1.1
+        with:
+          comment: "Test environment available at: https://${{ env.UNIQUE_NAMESPACE }}.sa-prototype.rdieleman.com"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

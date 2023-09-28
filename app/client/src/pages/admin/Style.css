@@ -1,0 +1,67 @@
+.admin-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
+  max-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.admin-page > div {
+  background-color: var(--custom-white);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.account-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-list {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.account-list-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.account-list-item:hover {
+  background-color: var(--custom-grey-medium);
+}
+
+.account-list > .account-list-item:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.account-list-item.selected {
+  background-color: var(--custom-pink);
+  color: var(--custom-white);
+}
+
+.account-list-item > div:last-child {
+  flex-grow: 1;
+}

@@ -1,0 +1,82 @@
+.alert-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 350px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.alert {
+  padding: 10px;
+  background-color: var(--custom-white);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  animation: slideIn 400ms ease-out forwards;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.alert > img {
+  width: auto;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.alert > div {
+  flex-grow: 1;
+}
+
+.alert.exit {
+  animation: slideOut 400ms ease-out forwards;
+}
+
+.alert.error {
+  background-color: var(--custom-pink);
+  color: white;
+}
+
+.alert.success {
+  background-color: var(--custom-green);
+  color: white;
+}
+
+.alert.info {
+  background-color: var(--custom-blue);
+  color: white;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

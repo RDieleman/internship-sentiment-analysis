@@ -1,0 +1,37 @@
+#auth-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: var(--custom-grey-medium-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#auth-container {
+  z-index: inherit;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.16);
+  background-color: var(--custom-white);
+  padding: 40px;
+}
+
+#auth-container > input {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#auth-container > input[type="button"] {
+  background-color: var(--custom-pink);
+  color: white;
+  border: none;
+}

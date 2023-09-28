@@ -1,0 +1,39 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ./namespace.yaml
+  - ../../../base/app
+  - ./ssl-secret.yaml
+  - ./auth-secret.yaml
+  - ../../../../config/overlays/test/
+
+namespace: UNIQUE_NAMESPACE
+
+patches:
+  - patch: |-
+      apiVersion: networking.k8s.io/v1
+      kind: Ingress
+      metadata:
+        name: base-ingress
+        annotations:
+          cert-manager.io/issuer: letsencrypt-nginx
+          nginx.ingress.kubernetes.io/auth-type: "basic"
+          nginx.ingress.kubernetes.io/auth-secret: "AUTH_SECRET_NAME"
+          nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+
+      spec:
+        tls:
+          - hosts:
+              - "UNIQUE_NAMESPACE.sa-prototype.rdieleman.com"
+            secretName: SSL_SECRET_NAME
+    target:
+      kind: Ingress
+      name: app-ingress
+  - patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: UNIQUE_NAMESPACE.sa-prototype.rdieleman.com
+    target:
+      kind: Ingress
+      name: app-ingress

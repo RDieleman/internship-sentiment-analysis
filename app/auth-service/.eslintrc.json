@@ -1,0 +1,23 @@
+{
+  "extends": ["google", "prettier", "plugin:security/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "strict": "error",
+    "no-eval": "error",
+    "prettier/prettier": "error",
+    "require-jsdoc": [
+      "error",
+      {
+        "FunctionDeclaration": false,
+        "MethodDefinition": false,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": false,
+        "FunctionExpression": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon-question-theme" transform="translate(1 1)">
+    <g id="Group_118" data-name="Group 118" transform="translate(-1 -1)">
+      <rect id="Rectangle_72" data-name="Rectangle 72" width="24" height="24" fill="none"/>
+    </g>
+    <g id="Group_119" data-name="Group 119" transform="translate(5.502 1.937)">
+      <path id="Path_108" data-name="Path 108" d="M11.1,12.919c.775-1.4,2.266-2.225,3.132-3.464a2.373,2.373,0,0,0-2.2-3.726,3.062,3.062,0,0,0-2.89,2.356L6.54,6.988A5.7,5.7,0,0,1,12.028,3a5.407,5.407,0,0,1,4.813,2.427,4.84,4.84,0,0,1,.03,4.934c-1.208,1.782-2.366,2.326-2.991,3.474-.252.463-.352.765-.352,2.256h-2.91A6.087,6.087,0,0,1,11.1,12.919Zm2.95,7.2A2.014,2.014,0,1,1,12.038,18.1,2.02,2.02,0,0,1,14.052,20.119Z" transform="translate(-6.54 -3)" fill="#e41b51"/>
+    </g>
+  </g>
+</svg>

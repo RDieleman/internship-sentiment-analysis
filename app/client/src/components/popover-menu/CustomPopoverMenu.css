@@ -1,0 +1,85 @@
+.react-aria-Button {
+  border: 1px solid black;
+  color: black;
+  border-radius: 4px;
+  appearance: none;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  outline: none;
+  padding: 0.286rem 0.857rem;
+}
+
+.react-aria-Menu {
+  --highlight-background: white;
+  --highlight-foreground: black;
+  --separator-color: var(--spectrum-global-color-gray-500);
+  --text-color: black;
+  --text-color-disabled: grey;
+
+  max-height: inherit;
+  box-sizing: border-box;
+  overflow: auto;
+  margin: 0;
+  min-width: 150px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: white;
+  padding: 5px;
+
+  .react-aria-Section:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .react-aria-Header {
+    font-size: 1.143rem;
+    font-weight: bold;
+    padding: 0 0.714rem;
+  }
+
+  [role="separator"] {
+    height: 1px;
+    background: black;
+    margin: 2px 4px;
+  }
+}
+
+.react-aria-Popover {
+  --background-color: white;
+  --border-color: black;
+
+  border: 1px solid black;
+  box-shadow: 0 8px 20px rgba(0 0 0 / 0.1);
+  border-radius: 6px;
+  background: white;
+  outline: none;
+
+  &[data-placement="top"] {
+    --origin: translateY(8px);
+  }
+
+  &[data-placement="bottom"] {
+    --origin: translateY(-8px);
+  }
+
+  &[data-entering] {
+    animation: slide 200ms;
+  }
+
+  &[data-exiting] {
+    animation: slide 200ms reverse ease-in;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: var(--origin);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

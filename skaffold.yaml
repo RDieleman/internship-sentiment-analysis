@@ -1,0 +1,118 @@
+apiVersion: skaffold/v4beta4
+kind: Config
+metadata:
+  name: sa-prototype
+build:
+  artifacts:
+    - image: sentiment-ai
+      context: sentiment-ai
+      docker:
+        dockerfile: Dockerfile
+    - image: client
+      context: app/client
+      docker:
+        dockerfile: Dockerfile
+    - image: moderation-service
+      context: app/moderation-service
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          NPM_TOKEN: "{{.NPM_TOKEN}}"
+    - image: socket-service
+      context: app/socket-service
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          NPM_TOKEN: "{{.NPM_TOKEN}}"
+    - image: campaign-service
+      context: app/campaign-service
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          NPM_TOKEN: "{{.NPM_TOKEN}}"
+    - image: chat-service
+      context: app/chat-service
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          NPM_TOKEN: "{{.NPM_TOKEN}}"
+    - image: notification-service
+      context: app/notification-service
+      docker:
+        dockerfile: Dockerfile
+        buildArgs:
+          NPM_TOKEN: "{{.NPM_TOKEN}}"
+    - image: auth-service
+      context: app/auth-service
+      docker:
+        dockerfile: Dockerfile
+profiles:
+  # Profile for local development in minikube.
+  - name: dev
+    activation:
+      - command: dev
+        kubeContext: minikube
+    build:
+      local:
+        push: false
+    manifests:
+      kustomize:
+        paths:
+          - ./infra/overlays/dev/
+    portForward:
+      - resourceType: Service
+        resourceName: mongo-srv
+        port: 27017
+        localPort: 27017
+
+  # Profle for testing deployments.
+  - name: test
+    manifests:
+      hooks:
+        before:
+          - host:
+              command:
+                [
+                  "cmd.exe",
+                  "/C",
+                  "replace-placeholders.bat",
+                  "&&",
+                  "cmd.exe",
+                  "/C",
+                  "import-secrets.bat",
+                ]
+              dir: "./infra/overlays/test/"
+              os:
+                - windows
+          - host:
+              command: ["bash", "replace-placeholders.sh"]
+              dir: "./infra/overlays/test/"
+              os:
+                - linux
+          - host:
+              command: ["bash", "import-secrets.sh"]
+              dir: "./infra/overlays/test/"
+              os:
+                - linux
+      kustomize:
+        paths:
+          - ./infra/overlays/test/target/
+    patches:
+      - op: remove
+        path: /build/artifacts/0
+
+  # Profile for production deployment.
+  - name: prod
+    manifests:
+      kustomize:
+        paths:
+          - ./infra/overlays/prod/
+    patches:
+      - op: remove
+        path: /build/artifacts/0
+
+  - name: ai
+    manifests:
+      kustomize:
+        paths:
+          - ./infra/base/ai/

@@ -1,0 +1,76 @@
+.sideMenu {
+  justify-content: flex-start !important;
+}
+
+.sideMenu > .overlay-container {
+  max-width: 350px;
+}
+
+.sideMenu > .overlay-container.open {
+  animation-name: sideMenuSlideIn !important;
+}
+
+.sideMenu > .overlay-container.closed {
+  animation-name: sideMenuSlideOut !important;
+}
+
+.sideMenuContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+
+.sideMenuContainer > div {
+  overflow: hidden;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: black;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: large;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  background-color: var(--custom-white);
+}
+
+.sideMenuContainer > div:hover {
+  filter: brightness(90%);
+}
+
+.sideMenuContainer > div > img {
+  height: 100%;
+  width: auto;
+}
+
+.sideMenuContainer > div:last-child {
+  background-color: var(--custom-pink);
+  color: white;
+  margin-top: auto;
+}
+
+@keyframes sideMenuSlideIn {
+  from {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes sideMenuSlideOut {
+  from {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}

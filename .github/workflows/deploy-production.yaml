@@ -1,0 +1,35 @@
+name: deploy-production
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cached LFS checkout
+        uses: nschloe/action-cached-lfs-checkout@v1.1.2
+        with:
+          exclude: "sentiment-ai/** docs/**"
+
+      - name: Setup Server Access
+        uses: ./.github/setup-action
+        with:
+          do_token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          cluster_name: ${{ secrets.CLUSTER_NAME }}
+
+      - name: Configure App
+        uses: ./.github/config-action
+        with:
+          container_registry: ${{ secrets.CONTAINER_REGISTRY }}
+          ssl_secret: ${{ secrets.SSL_SECRET_NAME }}
+          auth_secret: ${{ secrets.AUTH_SECRET_NAME }}
+          jwt_option_token: ${{ secrets.JWT_OPTION_TOKEN_PROD}}
+          cookie_option_key: ${{ secrets.COOKIE_OPTION_SECRET_KEY_PROD}}
+
+      - name: Deploy to production environment with Skaffold
+        run: skaffold run -p prod
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

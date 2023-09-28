@@ -1,0 +1,106 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  visibility: hidden;
+}
+
+.overlay.open {
+  visibility: visible;
+}
+
+.overlay-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+}
+
+.overlay-container {
+  background-color: var(--custom-white);
+  max-width: 600px;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 91;
+  visibility: hidden;
+}
+
+.overlay-container > *:first-child {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.overlay-container.open {
+  animation: overlaySlideIn 0.2s ease-in-out forwards;
+  animation-delay: 0.2s;
+  visibility: hidden;
+  transition: visibility 0s linear 0.2s;
+}
+.overlay-background.open {
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+.overlay-container.closed {
+  animation: overlaySlideOut 0.2s ease-in-out forwards;
+}
+
+.overlay-background.closed {
+  animation: fadeOut 0.2s ease-in-out forwards;
+  animation-delay: 0.2s;
+  visibility: visible;
+}
+
+@keyframes overlaySlideIn {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes overlaySlideOut {
+  from {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}

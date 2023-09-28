@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - app-ingress.yaml
+  - nats-depl.yaml
+  - client-depl.yaml
+  - moderation-service-depl.yaml
+  - socket-service-depl.yaml
+  - campaign-service-depl.yaml
+  - chat-service-depl.yaml
+  - notification-service-depl.yaml
+  - auth-service-depl.yaml
+  - ../../shared/mongodb/

@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: prod
+
+resources:
+  - ../../base/app
+  - health-ingress.yaml
+  - ../../../config/overlays/prod/
+
+patches:
+  - path: app-ingress-merge.yaml
+  - patch: |-
+      - op: replace
+        path: /spec/rules/0/host
+        value: sa-prototype.rdieleman.com
+    target:
+      name: app-ingress

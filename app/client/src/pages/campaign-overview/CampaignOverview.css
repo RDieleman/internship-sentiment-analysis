@@ -1,0 +1,37 @@
+.campaigns-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 100% !important;
+  background-color: var(--custom-white);
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.campaign-page-scroll {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.campaigns-page-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.campaigns-page-content > div {
+  padding: var(--custom-padding-standard);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campaigns-page-content > div > .text-title {
+  color: black;
+  font-size: larger;
+}

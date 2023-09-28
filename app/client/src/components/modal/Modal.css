@@ -1,0 +1,149 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container {
+  background-color: var(--custom-white);
+  z-index: 101;
+  width: 100%;
+  max-width: 500px;
+  max-height: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header,
+.modal-content {
+  padding: 20px;
+}
+
+.modal-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: var(--custom-black);
+}
+
+.modal-header > * {
+  color: var(--custom-white);
+  text-transform: uppercase;
+}
+
+.modal-content {
+  flex-grow: 1;
+  min-height: 200px;
+  overflow-y: auto;
+  display: flex;
+}
+.modal-controls {
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: row;
+}
+.modal-controls > * {
+  flex-grow: 1;
+}
+
+/* OPEN */
+.modal-background.open {
+  animation: fadeIn 0.5s forwards;
+}
+
+.modal-container.open {
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 0.5s;
+  visibility: hidden;
+  transition: visibility 0s linear 0.5s;
+}
+
+/* CLOSED */
+.modal-background.closed {
+  animation: fadeOut 0.5s forwards;
+  animation-delay: 0.5s;
+}
+.modal-container.closed {
+  animation: fadeOutDown 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeInUp {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+  80% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  60% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+    visibility: visible;
+  }
+}

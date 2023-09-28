@@ -1,0 +1,35 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.removeUnusedImports": true,
+      "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "files.eol": "\n",
+    "javascript.preferences.importModuleSpecifierEnding": "js"
+  },
+  "extensions": {
+    "recommendations": [
+      "ecmel.vscode-html-css",
+      "christian-kohler.npm-intellisense",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "ms-vscode.powershell",
+      "leizongmin.node-module-intellisense",
+      "kuscamara.remove-unused-imports",
+      "ms-vscode.vscode-typescript-next",
+      "nucllear.vscode-extension-auto-import",
+      "mikestead.dotenv",
+      "editorconfig.editorconfig",
+      "tomoki1207.pdf"
+    ]
+  }
+}

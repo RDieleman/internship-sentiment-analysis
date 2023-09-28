@@ -1,0 +1,32 @@
+.text-title {
+  font-size: larger;
+  color: var(--custom-pink);
+  font-weight: bold;
+}
+
+.text-subtitle {
+  font-size: larger;
+  color: var(--custom-black);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.text-header {
+  font-size: medium;
+  color: var(--custom-black);
+  font-weight: bold;
+}
+
+.text-body {
+  font-size: medium;
+  color: var(--custom-black);
+}
+
+.text-info {
+  font-size: smaller;
+  color: var(--custom-grey-medium-dark);
+}
+
+.bold {
+  font-weight: bold;
+}

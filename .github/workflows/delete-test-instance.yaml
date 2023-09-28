@@ -1,0 +1,31 @@
+name: delete-test-instance
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cached LFS checkout
+        uses: nschloe/action-cached-lfs-checkout@v1.1.2
+        with:
+          exclude: "sentiment-ai/** docs/**"
+
+      - name: Extract PR number and set namespace
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          UNIQUE_NAMESPACE="pr-${PR_NUMBER}"
+          echo "UNIQUE_NAMESPACE=${UNIQUE_NAMESPACE}" >> $GITHUB_ENV
+          echo "::set-output name=namespace::${UNIQUE_NAMESPACE}"
+
+      - name: Setup Server Access
+        uses: ./.github/setup-action
+        with:
+          do_token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          cluster_name: ${{ secrets.CLUSTER_NAME }}
+
+      - name: Delete namespace of test instance
+        run: kubectl delete namespace $UNIQUE_NAMESPACE --force
